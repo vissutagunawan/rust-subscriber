@@ -12,3 +12,7 @@ Simulation slow subscriber
 ![img](image.png)
 
 > The queue shown above contains accumulated messages because the publisher sends messages to the broker faster than the consumer can process them. Since the consumer operates more slowly, unprocessed messages remain stored in the queue awaiting consumption.
+
+![img](image2.png)
+
+> With three consumers simultaneously processing messages, the queue empties considerably faster. The reduction in queued messages is substantial as the message broker efficiently distributes the workload among all available consumers, demonstrating effective load balancing capabilities.
